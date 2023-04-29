@@ -1,0 +1,93 @@
+/*
+	This is connect to index.html to build a registration form
+*/
+body{
+
+	background-image: url("../img/spaceship.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#head{
+	text-align: center;
+	font-size:50px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+h1,h3{
+	color: white;
+}
+h2{
+	color:red;
+}
+#sub{
+	margin-top: -30px;
+}
+#planet{
+	text-align: center;
+}
+
+#earth{
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+#mars{
+
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+#dpdate{
+	text-align: center;
+	font-size: 50px;
+	font-family: Didot, serif;
+}
+#pinfo{
+	text-align: center;
+	font-size: 40px;
+	font-family: Apple Chancery, cursive;
+}
+#hpinfo{
+	color: #FEC804;
+}
+#content{
+	text-align: left;
+	position: relative;
+  	border: dashed 5px #4A746A;
+  	padding: 30px;
+ 	margin: auto;
+ 	display: table;
+ 	color: lightgreen;
+}
+#bio{
+
+}
+label{
+	font-size: 25px;
+	font-family: Jazz LET, fantasy;
+}
+textarea{
+	display: inline-block;
+	margin-left:10px; 
+	vertical-align: top;
+	margin-top:3px; 
+	margin-bottom:3px; 
+	font-size: 20px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	color:orange;
+}
+input{
+	margin-left: 10px;
+	font-size: 20px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	color:orange;
+}
+#news{
+	display: inline-block;
+	margin-right:60px; 
+	font-size: 25px;
+	font-family: Jazz LET, fantasy;
+}
+#button{
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+<!--
+	Author: Kaichun Lee
+	Course: CSC337
+	This is a html file for buding the web appearance
+-->
+
+<!DOCTYPE html>
+<html lang='EN'>
+	<head>
+		<title> Chatty </title>
+		<link rel='stylesheet' type='text/css' href="./style.css">
+	</head>
+	<body>
+		<div id='chatRoom'></div>
+		<div id='userInterface'>
+			<div id='input'>
+				<label for='alias'>Alias</label>
+				<input type='text' id='alias'>
+				<br>
+				<label for='msg'>Message</label>
+				<input type='text' id='msg'>
+			</div>
+			<div id='action'>
+				<button id='send' onclick="sendMsg()">Send Message</button>
+			</div>
+		</div>
+		<script src="./action.js"></script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+/*
+
+	Author: Kaichun Lee
+	Class: CS337
+	Description: This is the css file for index.html.
+
+*/
+body{
+	margin:0px;
+}
+
+#sidebar{
+	position: fixed;
+	background-color: rgb(64, 64, 64);
+	text-align: center;
+	width:30%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#curVal{
+	font-size: 30px;
+	color: white;
+}
+
+#title{
+	color: white;
+	font-size: 60px;
+}
+
+#inputText{
+	width: 70%;
+	height: 30px;
+	font-size: 20px;
+}
+
+#updateText{
+	width: 60%;
+	height: 30px;
+	font-size: 20px;
+
+}
+
+.slideContainer{
+	background-color: red;
+}
+#slider{
+	width: 50%;
+	-webkit-appearance:none;
+	background: darkgray;
+	border-radius: 10px;
+}
+
+#slider::-webkit-slider-thumb{
+	--webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+table, tr, td{
+	min-width: 55%;
+	min-height: 40%;
+	border: 2px solid;
+	border-color: pink;
+	border-collapse: collapse;
+	color: orange;
+	font-size: 30px;
+	font-family: Jazz LET, fantasy;
+}
+
+table{
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.cipherCotainer{
+	text-align: center;
+	font-family: Courier, monospace;
+	font-size: 80px;
+	color: rgb(64, 64, 64);
+}
+
+#caesar{
+	position: fixed;
+	background: rgb(0,230,110);
+	width: 70%;
+	height: 50%;
+	right: 0px;
+	top:0px;
+	word-wrap: break-word;
+	overflow-y: scroll;
+}
+
+#square{
+	position: fixed;
+	background: rgb(0,255,255);
+	width: 70%;
+	height: 50%;
+	right: 0px;
+	bottom: 0px;
+	word-wrap: break-word;
+	overflow-y: scroll;
+}

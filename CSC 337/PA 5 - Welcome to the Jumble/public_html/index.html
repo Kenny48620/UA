@@ -1,0 +1,49 @@
+<!--
+
+	Author: Kaichun Lee
+	Class: CS337
+	Description: In this program, I practice and use HTML, CSS, Javascript, DOM manipulation, and event-driven programming.
+
+-->
+
+<!DOCTYPE html>
+<html lang="EN">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>WTTJ</title>
+	</head>
+
+	<body>
+		<div id = "sidebar">
+			
+			<h1 id="title"> Welcome to the Jumble</h1>
+	
+			<input oninput="setCaesar(); setSquare()" id="inputText" type="text" value="welcome to the jumble">
+
+			<br>
+			<br>
+		
+			<div class = "sliderContainer">
+				<label for="slider" id="curVal"></label>
+				<input id="slider" type="range" min= "0" max="26" value="0" oninput="displayValue(); setCaesar()">
+			</div>
+
+			<br>
+
+			<input onclick="squareAlgorithm();setTable();setSquare()" id="updateText" type="button" value="Update Square">
+
+			<br><br><br>
+			
+			<table id="table"> </table>
+			
+		</div>
+
+		<div class="cipherCotainer">
+			<div id="caesar" class = "caesarCipher"></div>
+			<div id="square" class = "squareCipher"></div>
+		</div>
+
+	<script src="js/style.js"></script>
+	</body>
+</html>

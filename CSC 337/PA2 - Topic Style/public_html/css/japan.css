@@ -1,0 +1,87 @@
+/*
+	This css is connected with japan.html.
+*/
+body{
+	text-align: center;
+}
+
+#jp{
+	font-family: Times New Roman, Times, serif;
+	font-size: 80px;
+	color:white;
+	background-color: #847072;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding: 80px;
+
+}
+
+
+#pages
+{
+	background-color: #A8DFF1;
+	color:lightpink;
+	font-size: 50px;
+	font-family: Apple Chancery, cursive;
+	margin-top: -70px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding: 40px;
+}
+#japan
+{
+	color:#10A44A;
+	margin-right:70px;
+}
+#canada
+{
+	color:#10A44A;
+}
+
+#content
+{
+	background-color: #DCC1B0;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: -10px;
+	padding: 50px;
+
+	
+}
+
+#flag
+{
+ border-style: dashed;
+ border-width: thick;
+ border-color: #FFD954;
+ padding: 5px;
+ border-radius: 5%;		
+}
+
+p
+{
+	font-family: Chalkduster, fantasy;
+	font-size: 30px;
+}
+
+table,tr,th,td
+{
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+	width: 400px;
+	height: 100px;
+	font-family: Bradley Hand, cursive;
+	font-size: 20px;
+
+	border: 9px dotted #FFD954;
+	border-collapse: collapse;
+
+}
+th
+{
+	background-color: #45BB89;
+	opacity: 0.8;
+
+}

@@ -1,0 +1,29 @@
+#! /usr/bin/python3
+
+print("Status: 200 OK")
+print("Content-Type: text/html")
+print()
+
+import cgi
+form = cgi.FieldStorage()
+
+
+print("<html>")
+print("<head></head>")
+print("<body><p>")
+
+
+if "number" not in form:
+    print("The variable 'number' was not sent as a parameter")
+elif form["number"].value.isdigit() == False:
+    print("The variable 'number', which was set to '"+form["number"].value+"', cannot be converted to an integer.")
+else:
+    value = int(form["number"].value)
+    square = value*value
+    print("The number is: " + str(value))
+    print("<div></div>")
+    print("Its square is: " + str(square))
+
+
+print("</body></p")
+print("</html>")

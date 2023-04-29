@@ -1,0 +1,43 @@
+<!--
+	Author: Kaichun Lee
+	Course: CSC337
+	Description: an html to display the post.html
+
+	!-->
+<!DOCTYPE html>
+<html lang="EN">
+	<head>
+		<title>Ostaa</title>
+		<link rel='stylesheet' type='text/css' href='./postStyle.css'>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  		<script src="./codepost.js"></script>
+	</head>
+	<body>
+ 
+		<div id='postContainer'>
+			<h1 id='Ostaa'>Ostaa</h1> 
+			<h1 id='addAPost'>Add a Post</h1>
+			
+			<label for='title' id=''>Title</label>
+			<input type='text' id='title'>
+			<br>
+			<label for='desc'>Desc</label>
+			<input type='text' id='desc'>
+			<br>
+			<label for='price'>Price</label>
+			<input type='text' id='price'>
+			<br>
+			<label for='status'>Status</label>
+			<input type='text' id='status'>
+			<br>
+			
+			<div id='add'>
+				<input type='file' id='image'>
+				
+				<span id='file'> </span>
+				<button onclick="createPost()">Create Post</button>
+			</div>
+		</div>
+	</body>
+</hhtml>
+

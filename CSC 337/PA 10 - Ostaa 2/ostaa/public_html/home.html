@@ -1,0 +1,49 @@
+<!--
+	Author: Kaichun Lee
+	Course: CSC337
+	Description: an html to display the home.html
+
+!-->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>Ostaa</title>
+	<link rel="stylesheet" type="text/css" href="./homeStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  	<script src="./code1.js"></script>
+</head>
+<body>
+	<div id='title'>
+		<h1 id='ostaa'>Ostaa</h1>
+	</div>
+
+	<div id='leftPart'>
+		<br>
+			<h2 id="welcome"></h2>
+		<br>
+		<br>
+			<span id='search'>
+			<input type="text" id='searchBar'> 
+			
+			<button id='searchBtn' onclick="search()">Search Listings</button>
+			</span>
+		<br>
+		<br>
+			<button id='viewListBtn' onclick="getList()">View your Listings</button>
+		<br>
+		<br>
+			<button id='viewPuchaseBtn' onclick="getPurchases()">View your purchases</button>
+		<br>
+		<br>
+			<button id='createListhBtn' onclick="createList()">Create a Listings</button>
+		<br>
+	</div>
+
+	<div id='rightPart'>
+	</div>
+
+
+</body>
+</html>

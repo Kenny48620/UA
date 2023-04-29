@@ -1,0 +1,78 @@
+/*
+	This css is connected with index.html.
+*/
+#ca{
+	color: pink;
+	background-color: #77A88D;
+	font-family: Garamond, serif;
+	font-size: 90px;
+	padding: 30px;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -10px;
+	text-align: center;
+}
+#pages{
+	text-align: center;
+	background-color: #E4B660; 
+	padding: 50px;
+	margin-top:-60px;
+	margin-left: -10px;
+	margin-right:-10px; 
+	font-family: Copperplate, Papyrus, fantasy;
+	font-size: 40px;
+	color: #E4B660;
+}
+#japan{	
+	position: relative;
+	color:#69454F;
+	margin-right:100px;
+
+}
+#canada{
+	color:#69454F;
+
+}
+#content{
+	text-align: center;
+	background-color: lightblue;
+	margin-left: -10px;
+	margin-right:-10px;
+	margin-bottom: -10px;
+	padding: 50px;
+}
+#flag{
+	border-style: double;
+	border-color: #B78338;
+	border-width: 10px;
+	border-radius: 10%;
+	width: 350px;
+	height: 200px;
+	padding: 10px;
+
+}
+p{
+	font-family:Georgia, serif;
+	font-style: italic;
+	font-size: 25px;
+	color: #028C6A;
+}
+table, tr, th, td{
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 3px double black;
+    border-color: darkred;
+    width: 350px;
+    height: 120px;
+    color: darkorange;
+    font-family: Arial, Arial, sans-serif;
+    font-size: 25px;
+}
+th{
+	
+	background-color:lightgreen;
+	font-size: 30px;
+
+}
+

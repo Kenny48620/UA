@@ -1,0 +1,68 @@
+/*
+
+	Author: Kaichun Lee
+	Course: CSC337
+	Description: an css file to display the home.html
+
+*/
+body,html{
+	margin: 0px;
+	width: 100%;
+}
+
+#title{
+	background-color: skyblue;
+	position: fixed;
+	top:0px;
+	width: 100%;
+	height: 20%;
+	
+}
+#ostaa{
+	padding: 10px;
+	color: darkblue;
+	margin: 30px;
+	font-size: 50px;
+
+}
+
+#leftPart{
+	border: 2px solid black;
+	position: fixed;
+	top:20%;
+	left: 0px;
+	height: 80%;
+	width: 50%;
+	background-color: lightgreen;
+}
+
+#rightPart{
+	border: 2px solid;
+	position: fixed;
+	top:20%;
+	right: 0px;
+	height: 80%;
+	width: 50%;
+	overflow: scroll;
+	background-color: lightgreen;
+}
+
+#viewListBtn, #viewPuchaseBtn, #createListhBtn{
+	margin:10px;
+	margin-left:50px;
+	font-size: 20px;
+}
+#welcome{
+	margin-top:30px;
+	margin-left:50px;
+	
+
+}
+#searchBtn, #searchBar{
+	font-size: 20px;
+}
+
+#search{
+	margin: 50px;
+}
+

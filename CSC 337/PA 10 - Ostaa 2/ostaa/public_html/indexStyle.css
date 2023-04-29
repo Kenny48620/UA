@@ -1,0 +1,34 @@
+/*
+	Author: Kaichun Lee;
+	Course: CSC337
+	Description: It's a style for the index.html
+
+*/
+
+body{
+	background-color: skyblue;
+
+}
+h1{
+	color: darkblue;
+}
+#userContainer, #itemContainer, #Ostaa{
+	padding: 10px;
+
+}
+
+#username, #password{
+	font-size: 20px;
+	margin: 10px;
+
+}
+
+#newUser, #newPass{
+
+	margin: 10px;
+	font-size: 20px;
+}
+
+label, button{
+	font-size: 20px;
+}

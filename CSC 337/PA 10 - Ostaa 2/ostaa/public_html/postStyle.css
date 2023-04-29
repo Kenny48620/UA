@@ -1,0 +1,35 @@
+/*
+
+	Author: Kaichun Lee
+	Course: CSC337
+	Description: an css file to display the post.html
+
+*/
+body{
+	background-color: skyblue;
+}
+
+
+
+#postContainer{
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+#Ostaa{
+	color:darkblue;
+}
+
+#title, #desc, #price, #status{
+	font-size: 20px;
+	margin: 30px;
+}
+
+#image{
+	font-size: 20px;
+}
+
+button{
+	font-size: 20px;
+}

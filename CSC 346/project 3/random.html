@@ -1,0 +1,16 @@
+#! /usr/bin/python3
+
+print("Status: 200 OK")
+print("Content-Type: text/html")
+print()
+
+import random as rd
+
+print("<html>\
+	<head></head>\
+	<body>\
+        <p> The random number is: ")
+
+print(rd.randint(0,100000))
+
+print("</p></body></html")

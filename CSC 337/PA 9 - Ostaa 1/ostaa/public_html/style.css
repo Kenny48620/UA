@@ -1,0 +1,28 @@
+/*
+	Author: Kaichun Lee;
+	Course: CSC337
+	Description: It's a syle for the index.html
+
+*/
+#userContainer, #itemContainer{
+	padding: 10px;
+
+
+}
+
+#username, #password{
+	font-size: 20px;
+	margin: 10px;
+
+}
+
+#title, #desc, #image, #price, #status, #itemUsername{
+
+	margin: 10px;
+	font-size: 20px;
+}
+
+label, button{
+	font-size: 20px;
+}
+

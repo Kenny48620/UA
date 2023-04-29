@@ -1,0 +1,41 @@
+/*
+
+	Author: Kaichun Lee
+	Course: CS337
+	Description:
+	This is the style file for index.html
+
+*/
+body{
+	height: 100%;
+	margin: 0px;
+}
+#chatRoom{
+	background-color: lightgreen;
+	position: fixed;
+	top:0px;
+
+	width: 100%;
+	height: 70%;
+	overflow: scroll;
+}
+
+#userInterface{
+	background-color: #40E0D0;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 30%;
+	
+}
+
+#input, #alias, #msg{
+	font-size: 50px;
+	margin: 10px;
+}
+
+#send{
+	width: 30%;
+	font-size: 50px;
+	margin:10px; 
+}

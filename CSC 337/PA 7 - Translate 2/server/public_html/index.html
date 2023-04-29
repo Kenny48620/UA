@@ -1,0 +1,42 @@
+<!--
+	Class: CSC337
+	Author:Kaichun Lee
+	Description: This the translator v2 html page.
+-->
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+	<meta charset="utf-8">
+	<title>Translator</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./req.js"></script>
+	
+</head>
+
+<body>
+	<div id="headerContainer">
+		<h1 id="header"> Translator </h1>
+	</div>
+
+	<div id="content">
+		<div id="leftTranslator">
+			<select name="English" id="from" onchange="setupRequest()">
+				<option value="e2">English</option>
+				<option value="s2">Spanish</option>
+				<option value="g2">German</option>
+			</select>
+			<textarea id="input" oninput="setupRequest()"></textarea>
+		</div>
+
+		<div id="rightTranslator">
+			<select name="Spanish" id="to" onchange="setupRequest()">
+				<option value="s">Spanish</option>
+				<option value="g">German</option>
+				<option value="e">English</option>
+			</select>
+			<textarea id="output" oninput="setupRequest()" readonly></textarea>
+		</div>
+	</div>
+
+</body>
+</html>

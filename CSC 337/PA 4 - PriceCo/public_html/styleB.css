@@ -1,0 +1,118 @@
+/*
+	Author:Kaichun Lee;
+	Description: this is a styleB for index.html.
+*/
+.body{
+	margin: 0px;
+
+}
+
+#header{
+	display: inline-block;
+	text-align: right;
+	position: fixed;
+	background-color: rgb(50,101,201);
+	color: yellow;
+
+	width: 33.3%;
+	height: 33.5%;
+	top:0px;
+	left: 33.3%;
+}
+
+#pricecoLogo{
+	width: 150px;
+	height: 150px;
+	top:15px;
+	position: relative;
+	float: left;
+}
+
+#navigation{
+	position: fixed;
+	background-color:rgb(100,199,254);
+	text-align: center;
+	
+	width: 33.3%;
+	height: 100%;
+
+	top:33.33%;
+	left:33.3%;
+}
+h1{
+	top:80px; 
+	font-size:50px;
+
+}
+#header div{
+    text-align: center;
+    font-size:20px;
+}
+
+.navButton{
+
+	display: block;
+	padding: 20px;
+	background-color:rgb(100,199,254);
+	font-size: 25px;
+	margin-top:30px; 
+
+}
+
+.styleButton{	
+	text-align: center;
+	font-size: 25px;
+	background-color: gray;
+	opacity: 0.7;
+	letter-spacing: 2px;
+	color:rgba(255,255,255,0.5);
+	bottom: 5px;
+	padding: 15px;
+	width: 120px;	
+}
+
+#content{
+	text-align: center;
+}
+#productsColA{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width: 33.5%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(148,218,251);
+}
+#productsColB{
+    position: fixed;
+    right:0px;
+    top:0px;
+    width: 33.5%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(148,218,251);
+}
+
+.productImg{
+	padding: 10px;
+	width: 50%;
+	height: 50%;
+}
+
+#styleA{
+	position: fixed;
+	left:5px;	
+}
+
+#styleB{
+	position: fixed;
+	left: 160px;
+}
+
+#styleC{
+	position: fixed;
+	left: 315px;
+
+}
