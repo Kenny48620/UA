@@ -1,0 +1,46 @@
+/*
+	This is the style sheet for the account login page
+
+*/
+
+
+
+button
+{
+	max-width: 100px;
+}
+
+body{
+	margin: auto;
+	padding: auto;
+	width: 50vw;
+	height: 80vh;
+	border-style: solid;
+	border-color: orange;
+
+	text-align: center;
+}
+
+#titleImage
+{
+	text-align: center;
+}
+
+.AccountBlock
+{
+	position: relative;
+
+	margin:  auto ;
+
+	border-style: solid;
+	border-color: red;
+
+	margin-top: 10vh;
+	padding: 10px;
+
+	max-width: 25vw;
+	min-width: 20vw;
+
+	display: inline-block;
+}
+

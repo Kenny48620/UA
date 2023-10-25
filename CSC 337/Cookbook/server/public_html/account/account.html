@@ -1,0 +1,83 @@
+<!--
+	
+
+	This is the login page and will be the default page to return to when the user times out
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+
+		<meta charset="utf-8">
+		<link id="cssfile" rel="stylesheet" type="text/css" href="./account.css">
+		<script src="account.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<title>Login</title>
+
+	</head>
+
+
+
+	<body id="body">
+		
+
+		<div id="titleImage">
+				<img id='image' src="./Cookbook.png">
+		</div>
+		<div id ="LoginUserPanel" class="AccountBlock">
+
+
+			<h2>Chef Login</h2>
+
+
+			<form>
+				<div class="PageInput">
+					<label for="UserLogin" required>Username: </label>
+					<input type="text" name="UserLogin" id="LoginUsernameInput" required>
+				</div>
+
+
+				<div class="PageInput">
+					<label for="newPasswordEntry">Password: </label>				
+					<input type="password" name="newPasswordEntry" id= "LoginPasswordInput" required>
+				</div>
+				<button type= "button" value="Submit" onclick="login()"> Login </button>
+
+			</form>
+		</div>
+
+
+
+		<!--This is where the user can make a new user login-->
+		<div id ="CreateUserPanel" class="AccountBlock">
+
+
+			<h2>Become a New Chef</h2>
+
+
+			<form>
+				<div class="PageInput">
+					<label for="newUserEntry" required>Enter new username: </label>
+					<input type="text" name="newUserEntry" id="NewUserNameInput" required>
+				</div>
+				<div class="PageInput">
+					<label for="newPasswordEntry">Enter new password: </label>				
+					<input type="password" name="newPasswordEntry" id= "NewUserPassInput" required>
+				</div>
+				<button type= "submit" value="Submit" onclick="createAccount()">Add User</button>
+				
+			</form>
+		</div>
+		<div>
+			<p id="creationMsg"></p>
+		</div>
+
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,159 @@
+<!--
+	
+	
+
+	Home page this is the main page where there is a side bar of options, a search bar and an area for output
+
+	-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>	
+
+		<meta charset="utf-8">
+		<title>CookBook</title>
+		<link id="cssfile" rel="stylesheet" type="text/css" href="./homeStyle.css">
+		<script src="home.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+
+
+
+
+	<body onload="welcomeUser(); getFriends(); getGrocery(); flushCBOutput(); getAllMyCookbooks();  getAllFamCookbooks();">
+
+		<div id="userArea">
+
+			<div class="UserPanel" id= "logo">
+				<img src="cookbook_logo.jpg" alt="logo">
+			</div>
+
+			<h2 id="welcome-user"></h2>
+
+			<div class="UserPanel" id="myCookBooks">
+				<h4>My Cookbooks</h4>
+
+				<div id="cookbookOutput" class="ListOutputs">
+
+				</div>
+
+				<span id='cookbookLine' class='InputLine'>
+					<input type="text" id='cookbookBar' class= 'TextInput' placeholder='Enter cookbook name!'> 
+					<button id='addCookbookBtn' class='SubmitBtn' onclick="createNewCookbook(); getAllMyCookbooks();">Create</button>
+					<button id='delCookbookBtn' class='CancelBtn' onclick="deleteACookbook();">X</button>
+					
+				</span>
+			</div >
+
+
+			<div class="UserPanel" id="friendList">
+				<h4>Friends List</h4>
+
+				<div id="friendOutput" class="ListOutputs">
+
+				</div>
+
+				<span id='friendsLine' class='InputLine'>
+					<input type="text" id='friendsBar' class= 'TextInput' placeholder='Enter username'> 
+					<button id='addFriendBtn' onclick="addFriend(); getFriends();">Add</button>
+				</span>
+
+			</div>
+
+			<div class="UserPanel" id="groceryList">
+				<h4>Grocery List</h4>
+
+				<div id="groceryOutput" class="ListOutputs">
+
+				</div>
+
+				<span id='groceryLine' class='InputLine'>
+					<input type="text" id='groceryBar' class= 'TextInput' placeholder='Enter new grocery item'> 
+					<button id='addGroceryBtn' onclick="addGrocery(); getGrocery();">Add</button>
+
+					<button id='delAllGroceryBtn' class='CancelBtn' onclick="deleteAllGrocery();">X</button>
+
+				</span>
+			</div>
+
+
+			<div class="UserPanel" id="chatBox">
+				<h4>Chat</h4>
+
+				<div id="chatOutput" class="ListOutputs">
+
+				</div>
+
+				<span id='chatLine' class='InputLine'>
+					<input type="text" id='chatBar' class= 'TextInput' placeholder='Enter message'> 
+					<button id='sendChatBtn' onclick="sendMessage(); getMessage();">Send</button>
+				</span>
+			</div>
+
+		</div>
+		
+
+		<!--This is the right side of the screen-->
+		<div id="cookBookArea">
+
+			<div id="searchBar">
+				<div id='sBarTop'>
+					<span id="searchBarLabel">Recipe Library</span>
+					<button id='myRecipeBtn'  class="tabButton" onclick="getAllMyRecipes();">View my recipes</button>
+					<button id='allRecipeBtn' class="tabButton" onclick="getAllGlobalRecipes();">Browse Global Collection</button>
+				</div>
+				<label for="searchInput"> <b> Search </b></label>
+				<input type="text" name="search" id="searchInput" placeholder="Enter keywords"> 
+				
+				<button id='searchButton' onclick="search();">Search!</button>
+				<input type="radio" id="searchRecipe" name="searchingFor" value="MINE">
+				<label for="searchItem">My Recipes</label>
+
+				<input type="radio" id="searchAll" name="searchingFor" value="ANY" checked="true">
+				<label for="searchAll">Anyone's</label>
+				<br>
+				<div id="buttonBar">
+					<button id='catTabAll' class="CatTabBtn" onclick="getRecipeByCategory(this)" value="All">All</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Appetizer">Apps</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Soups & Salads">Soup&Salad</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Breads">Breads</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Eggs">Eggs</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Vegetable">Veggies</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Pasta">Pasta</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Breakfast">Brkfst</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Meat">Meat</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Seafood">Seafood</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Sauces">Sauces</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Beverages">Beverages</button>
+					<button class="CatTabBtn" onclick="getRecipeByCategory(this)" value="Desserts">Desserts</button>
+
+
+
+				</div>
+
+			</div>
+
+			<!--This is the output where html can be appended for display-->
+			<div id="outputArea">
+
+				<!--This div will give a basic explaination to the app and what to do-->
+				<div id="quickStart" class="outputBlock">
+
+					<h3>Quick Start</h3>
+					<p>Welcome to the CookBook! Here you can organize your recipes in cookbooks and share them with others!</p>
+					<p> To get started: make a new cookbook in the My Cookbooks panel and then start making recipes!</p>
+				</div>
+
+				
+
+			</div>
+
+		</div>
+
+
+	</body>
+
+
+</html>

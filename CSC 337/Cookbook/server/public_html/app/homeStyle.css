@@ -1,0 +1,545 @@
+/*
+
+
+	This is the style sheet for the homepage of the site there are 2 main areas the user side and output side
+	the output side will display all the main components such as cookbooks and recipes.
+	the user side will have a list of books, friends, and a chat area to chat with friends
+
+
+
+*/
+
+/*
+	User panel styling
+*/
+
+#userArea
+{
+	position: fixed;
+	top: 0px;
+	left: 1px;
+	overflow-y: scroll;
+
+	width: 24.4%;
+	height: 99%;
+
+	border-style: solid;
+	border-color: darkblue;
+
+	background-color: #FFF5BA;
+}
+
+#logo
+{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+}
+
+#welcome-user {
+	text-align: center;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.UserPanel
+{
+	position: relative;
+	border-style: solid;
+	border-color: #6EB5FF;
+
+	height: 125px;
+
+	margin-right: 20px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+#myCookBooks
+{
+
+}
+
+.SubmitBtn
+{
+	background-color: #BFF8D8;
+}
+
+.CancelBtn
+{
+	background-color: #FFBEBC;
+
+	position: absolute;
+	max-width: 3vw;
+	width: 2vw;
+
+}
+
+#delCookbookBtn
+{
+}
+
+
+.myCBLink
+{
+	width: 100%;
+	border-radius: 30%;
+
+	background-color: #89aeb2;
+	border-style: groove;
+
+	border-style: none;
+	opacity: 0.6;
+  	transition: 0.3s;
+
+  	font-family: "Times New Roman", Times, serif;
+}
+
+
+/*this is to style the individual links*/
+.myCBLink:hover
+{
+	cursor: pointer;
+	font-weight: bold;
+	opacity: 1;
+
+
+}
+
+
+.cbEditTag:
+{
+
+	cursor: pointer;
+	font-weight: lighter;
+}
+
+
+#friendList
+{
+
+}
+
+#groceryList
+{
+}
+
+#chatBox
+{
+
+}
+
+
+/*
+
+	Cook book area styling
+
+*/
+
+#cookBookArea
+{
+	position: fixed;
+	right: 0px;
+	top: 0px;
+
+	
+	width: 75%;
+	height: 99%;
+
+
+	border-style: solid;	
+	border-color: darkred;
+
+
+
+}
+
+
+#searchBar
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+
+	width: 100%;
+	height: 18%;
+
+	background-color: #ACE7FF;
+
+	font-size: 2vw;
+
+}
+
+#searchBarLabel
+{
+
+	margin-left: 50px;
+	font-weight: bolder;
+	font-size: 3vw;
+}
+
+.tabButton
+{
+	position: relative;
+
+	border-style: none;
+	width: 20vw;
+	height: 8vh;
+
+	font-size: 1.5vw;
+
+
+	background-color: #6EB5FF;
+
+}
+.tabButton:hover
+{
+
+	background-color: #85E3FF;
+}
+
+#searchInput
+{
+	margin: auto;
+	font-size: 1.50vw;
+
+
+}
+
+
+#searchButton
+{	
+	height: 5vh;
+	width: 10vw;
+
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 5px;
+
+	background-color: #85E3FF;
+
+
+}
+
+#buttonBar
+{
+	margin: 0;
+	padding: 0;
+}
+
+.CatTabBtn
+{
+	position: relative;
+	display: inline;
+
+	max-width: 7vw;
+	width: 6vw;
+	height: 5vh;
+
+	margin: 0px;
+
+	border-style: none;
+
+	float: left;
+
+	background-color: #B5B9FF;
+}
+.CatTabBtn:hover
+{
+	background-color: #97A2FF;
+
+}
+.CatTabBtn:focus
+{
+	background-color: #97A2FF;
+
+}
+
+
+#catTabAll
+{
+	width: 2vw;
+}
+
+label {
+	margin-left: 10px;
+}
+
+
+
+
+#outputArea
+{
+	position: absolute;
+	background-color: #FFFFD1;
+
+	right: 0px;
+	bottom: 0px;
+
+	width: 100%;
+	height: 80%;
+
+	overflow-y: auto;
+}
+
+/*
+	temporary post area
+*/
+
+#cookbookLine{
+
+	position: absolute;
+	bottom: 0;
+	margin-left: 10px;
+
+}
+#friendsLine{
+	position: absolute;
+	bottom: 0;
+	margin-left: 10px;
+}
+
+#groceryLine{
+}
+
+
+
+.InputLine
+{
+	position: absolute;
+	bottom: 0;
+	margin-left: 10px;
+}
+
+.ListOutputs
+{
+	background-color: lightgray;
+
+	width: 100%;
+	height: 70%;
+
+	left: 0;
+	right: 0;
+	top: 0;
+
+	overflow-y: auto;
+
+}
+
+.TextInput
+{
+	position: relative;
+	width: 70%;
+	right: 10px;
+}
+
+
+#quickStart
+{
+	border-style: ridge;
+	border-radius: 15px;
+	padding: 20px;
+
+}
+
+
+/* These are the stylings for the output of hte recipes divs */
+
+.outputBlock
+{
+	margin: 10px;
+	border-style: groove;
+	border-color: lightgrey;
+
+	padding: 10px;
+
+	height: 30vh;
+	align-content: center;
+}
+
+#recipeOutput
+{
+	height: 30vh;
+}
+
+
+.RecIngredients
+{
+	position: relative;
+
+	margin: auto;
+	border-style: dashed;
+	border-color: dodgerblue;
+
+	width: 15vw;
+	height: 20vh;
+
+	bottom: 75px;
+	
+	display: inline-block;
+
+	vertical-align: center;
+
+	left:  1vw;
+}
+
+.RecInstructions
+{
+	position: relative;
+	margin: 5px;
+	margin-right: 0px;
+
+	border-style: groove;
+	border-color: lightgrey;
+
+	display: inline-block;
+
+	width: 15vw;
+	height: 20vh;
+
+
+	bottom: 75px;
+
+	left:  2vw;
+	vertical-align: center;
+
+}
+
+
+.DiffOut
+{
+	position: relative;
+	left: 7vw;
+	bottom: 0px;
+
+	font-size: 1.5vw;
+}
+
+
+.CookTimeOut
+{
+
+	position: relative;
+	left: 0;
+	bottom: 50px;
+	font-size: 1.5vw;
+}
+
+.recOutTitle
+{
+	max-width: 3vw;
+	text-overflow: wrap;
+}
+
+#recCBName
+{
+	background-color: #FFBEBC;
+	max-width: 15vw;
+	overflow-x: auto;
+}
+
+#newRecipeNameBar
+{
+	font-size: 1.5vw;
+}
+
+.RecBtn
+{
+	position: relative;
+	width: 5vw;
+	height: 5vh;
+
+	background-color: ;
+
+	background-color: #ff9aa2;
+	  border: none;
+	  color: white;
+	  text-align: center;
+	  font-size: 16px;
+	  opacity: 0.6;
+	  transition: 0.3s;
+	  display: inline-block;
+	  text-decoration: none;
+	  cursor: pointer;
+} 
+
+.RecBtn:hover {opacity: 1}
+
+
+
+
+ 
+/*                             this is the cookbook div that appears at the top of the recipe collection. */
+
+#cookBookHead
+{
+	border-style: groove;
+	border-color: gray;
+
+	height: 30vh;
+	padding: auto;
+
+	width: 60%;
+	margin: auto;
+
+}
+
+#cookBookTitle
+{
+	margin: auto;
+	text-align: center;
+}
+
+
+#cookBookStats
+{
+	position: absolute;
+
+	right: 0;
+	top: 0;
+
+	margin: 4vw;
+	margin-right: 18vw;
+
+
+	font-size: 2vw;
+
+	font-family: cursive;
+}
+
+#gotoCBEditBtn
+{
+	width: 15vw;
+	height: 8vh;
+
+	font-size: 1.5vw;
+	font-family: cursive;
+}
+
+/*The new recipe area in the n cookbook head div*/
+#newRecipeCBDiv
+{
+	font-size: 2vw;
+
+	font-family: cursive;
+}
+
+#newRecipeBtn
+{
+	width: 15vw;
+	height: 8vh;
+
+	font-size: 1.5vw;
+	font-family: cursive;
+}

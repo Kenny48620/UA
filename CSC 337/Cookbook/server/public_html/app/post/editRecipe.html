@@ -1,0 +1,92 @@
+<!--
+	
+	This is the recipe page
+	users will click an edit button to come to this page to edit and make a new recipe
+
+	-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>	
+   		<meta charset="utf-8"/>
+		<title>CookBook</title>
+		<link id="cssfile" rel="stylesheet" type="text/css" href="./editPageStyle.css">
+		<script src="editPage.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	</head>
+
+
+	<body onload="getDropDownMenu(); loadRecipeToEdit();">
+		
+		<div id = "recipePanel" >
+			
+			<h1>Create/Edit a Recipe!</h1>
+
+
+			<div id='recNameLine' class='InputLine'>
+				<label class="EditPageLabels" for="recNameBar">Recipe Title</label>
+				<input type="text" id='recipeNameBar' class= 'TextInput' placeholder='Enter the Recipe name'> 
+				
+			</div>
+
+			<!--This authos name can be extracted from the cookies-->
+			<div id='authorsNameLine' class='InputLine'>
+				<label class="EditPageLabels" for="authNameBar">Original Author</label>
+				<input type="text" id='authNameBar' class= 'TextInput' placeholder='Get user from cookies' readonly> 
+			<!-- contributors are people who edit a recipe these things should be done automatically-->
+			</div>
+
+			
+			<!--The user will select the recipes category thru a dropdown-->
+			<label class="EditPageLabels" for="categorySelection">Select the Category</label>
+			<div class="dropdown">
+			  <button class="dropbtn" id="categorySelection">Category</button>
+			  <div class="dropdown-content">
+			    
+			  </div>
+			</div>
+
+
+			<div id='ingredients' class='InputLine'>
+				<label class="EditPageLabels" for="ingredArea">Ingredients</label>
+				<textarea id='ingredArea' class= 'TextInput' placeholder='Enter the ingredients'></textarea>
+				
+			</div>
+
+
+			<div id='instructLine' class='InputLine'>
+				<label class="EditPageLabels" for="instructArea">Instructions</label>
+				<textarea id='instructArea' class= 'TextInput' placeholder='Enter the instructions name'></textarea>
+				
+			</div>
+
+
+			<div id='cookTimeLine' class='InputLine'>
+				<label class="EditPageLabels" for="cookTimeBar">Total Time to Make</label>
+				<input type="number" id='cookTimeBar' class= 'TextInput' placeholder='Enter enter time in minutes'> 
+				
+			</div>
+
+			<div id='diffLine' class='InputLine'>
+				<label class="EditPageLabels" for="diffBar">			 Difficulty</label>
+				
+				<div class="slidecontainer">
+					<span style="color: blue;">Easy!</span>
+ 					 <input type="range" min="1" max="5" value="3" class="slider" id="diffBar">
+					<span style="color: red;" >Hard</span>
+				</div>
+			</div>
+
+
+			<button id="saveButton" class="EditPageButtons" onclick="saveRecipe()">Save Recipe!</button>
+
+			<button id="exitButton" class="EditPageButtons" onclick="returnToHome()">Quit without Saving!</button>
+
+		</div><!--End of the panel-->
+
+	</body>
+
+</html>
